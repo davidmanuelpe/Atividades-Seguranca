@@ -57,11 +57,11 @@
 
 ## 4. Responda:
 
-###(a) Qual é a finalidade do array Estado?
+### (a) Qual é a finalidade do array Estado?
 
-###(b) Como é construída a S-box?
+### (b) Como é construída a S-box?
 
-###(c) Descreva rapidamente o estágio SubBytes, ShiftRows, MixColumns, AddRoundKey, e o algoritmo de expansão de chave.
+### (c) Descreva rapidamente o estágio SubBytes, ShiftRows, MixColumns, AddRoundKey, e o algoritmo de expansão de chave.
 
 a) Armazenar os dados para serem manipulados à cada etapa da criptografia ou descriptografia do algorítmo
 
@@ -71,7 +71,8 @@ b) 1. A S-box é iniciada com valores de byte em sequência crescente linha à l
     
    4. é aplicado uma transformação específica em cada bit de cada byte da S-box
 
-c) + SubBytes:
+c) 
+   + SubBytes:
     Nesta etapa, cada byte do array Estado passa por uma substituição não linear utilizando a S-box, que é uma tabela de substituição especial. A S-box mapeia cada byte de entrada para um byte de saída correspondente. Essa substituição não linear confunde os dados.
    
    + ShiftRows:
