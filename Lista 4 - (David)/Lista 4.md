@@ -3,6 +3,7 @@
 ## 1. Qual foi o conjunto original de critérios usados pelo NIST para avaliar as cifras AES candidatas?
 
   No conjunto original publicado em 1997 houveram 10 critérios dividos em 3 categorias distintas Segurança, Custo e Características de Implementação e são dividos da seguinte forma:
+    
     Segurança:
     
         ● Segurança geral (comparado aos outros candidatos)
