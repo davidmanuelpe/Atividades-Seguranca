@@ -65,17 +65,20 @@
 
 a) Armazenar os dados para serem manipulados à cada etapa da criptografia ou descriptografia do algorítmo
 
-b) 1. A S-box é iniciada com valores de byte em sequência crescente linha à linha de maneira que o valor do byte da linha y, coluna x é {yx}
-   2. Depois é mapeado cada byte com seu inverso multiplicativo em GF(2^8)
-   3. é aplicado uma transformação específica em cada bit de cada byte da S-box
+b) 
+   1. A S-box é iniciada com valores de byte em sequência crescente linha à linha de maneira que o valor do byte da linha y, coluna x é {yx}
 
-c) SubBytes:
+   2. Depois é mapeado cada byte com seu inverso multiplicativo em GF(2^8)
+    
+   4. é aplicado uma transformação específica em cada bit de cada byte da S-box
+
+c) *SubBytes:
     Nesta etapa, cada byte do array Estado passa por uma substituição não linear utilizando a S-box, que é uma tabela de substituição especial. A S-box mapeia cada byte de entrada para um byte de saída correspondente. Essa substituição não linear confunde os dados.
-   ShiftRows:
+   *ShiftRows:
     faz uma rotação circular à esqueda de bytes linha á linha a quantidade de rotações é diretamente ligado a qual o número da linha, ex: linha 0: nenhuma rotação, linha 3: três rotações.
-   MixColumns:
+   *MixColumns:
     Cada byte de uma coluna é mapeado para um novo valor através da multiplicação do Estado por uma Matriz, combinando linearmente os bytes de cada coluna, aumentando a difusão nos dados.
-   AddRoundKey:
+   *AddRoundKey:
      Através de uma operação XOR, cada byte do array Estado é combinado com um byte correspondente da chave da rodada bit a bit.
    Expansão de chave: Como o nome diz, gera uma lista expandida de sub-chaves a partir da chave de entrada que de 4 palavras iniciais, 
 
@@ -101,7 +104,11 @@ c) SubBytes:
 
 
 a) O elemento comparável em AES é o AddRoundKey
+
 b) Não é necessário no AES, no AES não há necessidade de uma estrutura de rede Feistel onde é necessário divisão de metades e permutação entre as mesmas, em vez disso em várias das etapas de AES há permutações byte á byte ou bit á bit
+
 c) Levando em consideração que a funcão f de DES seja a função com todas as etapas exceto a de manipulação de chave, podemos dizer que a função f de AES consiste em todos os passos tirando o passo de Expansão de Chave.
+
 d) Não há um elemento de comparação direta em AES, pois de novo esse elemento está diretamente ligado à estrutura de rede Feistel do DES fazendo uma reorganização dos bits da metade direita, entretanto temos em AES o ShiftRows e o MixColumns que também fazem uma reorganização.
+
 e) Não é necessário em AES cada passo de AES faz alterações em todo o bloco, não há uma divisão de metades como na estrutura Feistel.
