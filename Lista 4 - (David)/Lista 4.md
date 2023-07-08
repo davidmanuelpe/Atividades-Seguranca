@@ -4,17 +4,28 @@
 
   No conjunto original publicado em 1997 houveram 10 critérios dividos em 3 categorias distintas Segurança, Custo e Características de Implementação e são dividos da seguinte forma:
     Segurança:
+    
         ● Segurança geral (comparado aos outros candidatos)
+        
         ● Aleatoriedade
+        
         ● Solidez Matemática
+        
         ● Outros Fatores de Segurança (levantados pelo público durante o processo de avaliação)
+        
     Custo:
         ● Requerimentos de Licenciamento (algoritmos candidatos devem estar disponíveis mundialmente, sem exclusividade e royalty-free)
+        
         ● Eficiência Computacional
+        
         ● Requerimentos de Memória
+        
     Características de Implementação:
+    
         ● Flexibilidade
+        
         ● Aptidão para Software e Hardware
+        
         ● Simplicidade
 
 ## 2. Qual foi o conjunto final de critérios usados pelo NIST para avaliar as cifras AES candidatas?
