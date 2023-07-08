@@ -2,32 +2,33 @@
 
 ## 1. Qual foi o conjunto original de critérios usados pelo NIST para avaliar as cifras AES candidatas?
 
-  No conjunto original publicado em 1997 houveram 10 critérios dividos em 3 categorias distintas Segurança, Custo e Características de Implementação e são dividos da seguinte forma:
+  No conjunto original publicado em 1997 houveram 10 critérios dividos em 3 categorias distintas Segurança, Custo e Características de Implementação e são dividos da seguinte forma.
     
-    Segurança:
+   - Segurança:
+        
+        - Segurança geral (comparado aos outros candidatos)
+        
+        - Aleatoriedade
+        
+        - Solidez Matemática
+        
+        - Outros Fatores de Segurança (levantados pelo público durante o processo de avaliação)
+        
+   - Custo:
+
+        - Requerimentos de Licenciamento (algoritmos candidatos devem estar disponíveis mundialmente, sem exclusividade e royalty-free)
+        
+        - Eficiência Computacional
+        
+        - Requerimentos de Memória
+        
+   - Características de Implementação:
     
-        ● Segurança geral (comparado aos outros candidatos)
+        - Flexibilidade
         
-        ● Aleatoriedade
+        - Aptidão para Software e Hardware
         
-        ● Solidez Matemática
-        
-        ● Outros Fatores de Segurança (levantados pelo público durante o processo de avaliação)
-        
-    Custo:
-        ● Requerimentos de Licenciamento (algoritmos candidatos devem estar disponíveis mundialmente, sem exclusividade e royalty-free)
-        
-        ● Eficiência Computacional
-        
-        ● Requerimentos de Memória
-        
-    Características de Implementação:
-    
-        ● Flexibilidade
-        
-        ● Aptidão para Software e Hardware
-        
-        ● Simplicidade
+        - Simplicidade
 
 ## 2. Qual foi o conjunto final de critérios usados pelo NIST para avaliar as cifras AES candidatas?
    
@@ -71,17 +72,16 @@ b) 1. A S-box é iniciada com valores de byte em sequência crescente linha à l
     
    4. é aplicado uma transformação específica em cada bit de cada byte da S-box
 
-c) 
-   + SubBytes:
+c) ● SubBytes:
     Nesta etapa, cada byte do array Estado passa por uma substituição não linear utilizando a S-box, que é uma tabela de substituição especial. A S-box mapeia cada byte de entrada para um byte de saída correspondente. Essa substituição não linear confunde os dados.
    
-   + ShiftRows:
+   ● ShiftRows:
     faz uma rotação circular à esqueda de bytes linha á linha a quantidade de rotações é diretamente ligado a qual o número da linha, ex: linha 0: nenhuma rotação, linha 3: três rotações.
    
-   + MixColumns:
+   ● MixColumns:
     Cada byte de uma coluna é mapeado para um novo valor através da multiplicação do Estado por uma Matriz, combinando linearmente os bytes de cada coluna, aumentando a difusão nos dados.
    
-   + AddRoundKey:
+   ● AddRoundKey:
      Através de uma operação XOR, cada byte do array Estado é combinado com um byte correspondente da chave da rodada bit a bit.
    Expansão de chave: Como o nome diz, gera uma lista expandida de sub-chaves a partir da chave de entrada que de 4 palavras iniciais, 
 
@@ -95,15 +95,15 @@ c)
 
 ## 7. Compare AES com DES. Para cada um dos seguintes elementos do DES, indique o elemento comparável no AES ou explique por que ele não é necessário no AES.
 
-(a) XOR do material da subchave com a entrada da função f.
+### (a) XOR do material da subchave com a entrada da função f.
 
-(b) XOR da saída da função f com a metade esquerda do bloco.
+### (b) XOR da saída da função f com a metade esquerda do bloco.
 
-(c) função f.
+### (c) função f.
 
-(d) permutação P.
+### (d) permutação P.
 
-(e) troca de metades do bloco.
+### (e) troca de metades do bloco.
 
 
 a) O elemento comparável em AES é o AddRoundKey
