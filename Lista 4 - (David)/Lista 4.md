@@ -53,7 +53,7 @@
 
   AES (Advanced Encryption Standard) é o Padrão de criptografia que a NIST, Agência Americana, acredita que deva ser adotado por todos para uma melhor segurança
 
-  Rijndael é o algoritmo que foi candidato à se tornar o AES e venceu, então hoje o Rijndael é considerado o AES, mas nada garante que o será para sempre, c
+  Rijndael é o algoritmo que foi candidato à se tornar o AES e venceu, então hoje o Rijndael é considerado o AES, mas nada garante que o será para sempre.
 
 ## 4. Responda:
 
@@ -65,20 +65,22 @@
 
 a) Armazenar os dados para serem manipulados à cada etapa da criptografia ou descriptografia do algorítmo
 
-b) 
-   1. A S-box é iniciada com valores de byte em sequência crescente linha à linha de maneira que o valor do byte da linha y, coluna x é {yx}
+b) 1. A S-box é iniciada com valores de byte em sequência crescente linha à linha de maneira que o valor do byte da linha y, coluna x é {yx}
 
    2. Depois é mapeado cada byte com seu inverso multiplicativo em GF(2^8)
     
    4. é aplicado uma transformação específica em cada bit de cada byte da S-box
 
-c) *SubBytes:
+c) + SubBytes:
     Nesta etapa, cada byte do array Estado passa por uma substituição não linear utilizando a S-box, que é uma tabela de substituição especial. A S-box mapeia cada byte de entrada para um byte de saída correspondente. Essa substituição não linear confunde os dados.
-   *ShiftRows:
+   
+   + ShiftRows:
     faz uma rotação circular à esqueda de bytes linha á linha a quantidade de rotações é diretamente ligado a qual o número da linha, ex: linha 0: nenhuma rotação, linha 3: três rotações.
-   *MixColumns:
+   
+   + MixColumns:
     Cada byte de uma coluna é mapeado para um novo valor através da multiplicação do Estado por uma Matriz, combinando linearmente os bytes de cada coluna, aumentando a difusão nos dados.
-   *AddRoundKey:
+   
+   + AddRoundKey:
      Através de uma operação XOR, cada byte do array Estado é combinado com um byte correspondente da chave da rodada bit a bit.
    Expansão de chave: Como o nome diz, gera uma lista expandida de sub-chaves a partir da chave de entrada que de 4 palavras iniciais, 
 
@@ -92,15 +94,15 @@ c) *SubBytes:
 
 ## 7. Compare AES com DES. Para cada um dos seguintes elementos do DES, indique o elemento comparável no AES ou explique por que ele não é necessário no AES.
 
-###(a) XOR do material da subchave com a entrada da função f.
+(a) XOR do material da subchave com a entrada da função f.
 
-###(b) XOR da saída da função f com a metade esquerda do bloco.
+(b) XOR da saída da função f com a metade esquerda do bloco.
 
-###(c) função f.
+(c) função f.
 
-###(d) permutação P.
+(d) permutação P.
 
-###(e) troca de metades do bloco.
+(e) troca de metades do bloco.
 
 
 a) O elemento comparável em AES é o AddRoundKey
