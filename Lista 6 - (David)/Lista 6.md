@@ -103,13 +103,13 @@
 
   R:
 
-   Swap (Troca):
+   Swap (Troca);
 
-    A operação de troca envolve a troca de dois elementos em uma matriz ou em um vetor. No contexto do RC4, essa operação é usada para permutar elementos do estado interno do algoritmo (S-box). Isso é feito para embaralhar os elementos e introduzir confusão no processo de geração da sequência de bytes pseudoaleatórios.
+   A operação de troca envolve a troca de dois elementos em uma matriz ou em um vetor. No contexto do RC4, essa operação é usada para permutar elementos do estado interno do algoritmo (S-box). Isso é feito para embaralhar os elementos e introduzir confusão no processo de geração da sequência de bytes pseudoaleatórios.
 
-   XOR (OU Exclusivo):
+   XOR (OU Exclusivo);
 
-    A operação XOR é fundamental no RC4 para combinar o estado interno (S-box) com os dados de entrada (chave e vetor de inicialização) a fim de produzir o fluxo de bits pseudoaleatório. A operação XOR é aplicada para misturar os bits dos elementos do S-box com os bits da chave e do vetor de inicialização, gerando a sequência de saída.
+   A operação XOR é fundamental no RC4 para combinar o estado interno (S-box) com os dados de entrada (chave e vetor de inicialização) a fim de produzir o fluxo de bits pseudoaleatório. A operação XOR é aplicada para misturar os bits dos elementos do S-box com os bits da chave e do vetor de inicialização, gerando a sequência de saída.
 
 ## 6. 
 
