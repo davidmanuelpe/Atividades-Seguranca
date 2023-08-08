@@ -73,41 +73,43 @@
 
   R:
     
-    Reutilizar uma chave de cifra de fluxo é altamente indesejável devido a várias razões de segurança. Por exemplo,
+  Reutilizar uma chave de cifra de fluxo é altamente indesejável devido a várias razões de segurança. Por exemplo,
 
-    - Previsibilidade e Vulnerabilidade:
+  - Previsibilidade e Vulnerabilidade:
         
-        Quando uma chave de cifra de fluxo é reutilizada, a sequência de bits gerada será a mesma para as mensagens criptografadas com essa chave. Isso torna o fluxo de bits previsível, o que pode ser explorado por um atacante para decifrar ou manipular múltiplas mensagens criptografadas.
+    Quando uma chave de cifra de fluxo é reutilizada, a sequência de bits gerada será a mesma para as mensagens criptografadas com essa chave. Isso torna o fluxo de bits previsível, o que pode ser explorado por um atacante para decifrar ou manipular múltiplas mensagens criptografadas.
 
-    - Ataques de Texto Cifrado Escolhido:
+  - Ataques de Texto Cifrado Escolhido:
 
-        Se um atacante tem a capacidade de escolher parte do texto cifrado para ser descriptografado, reutilizar uma chave de cifra de fluxo permite que o atacante observe a mesma sequência de bits sendo usada para diferentes partes do texto cifrado. Isso pode revelar informações sensíveis e enfraquecer a segurança do sistema.
+    Se um atacante tem a capacidade de escolher parte do texto cifrado para ser descriptografado, reutilizar uma chave de cifra de fluxo permite que o atacante observe a mesma sequência de bits sendo usada para diferentes partes do texto cifrado. Isso pode revelar informações sensíveis e enfraquecer a segurança do sistema.
 
-    - Ataques de Conhecimento Nulo:
+  - Ataques de Conhecimento Nulo:
     
-        A reutilização de uma chave de cifra de fluxo pode permitir a realização de ataques de conhecimento nulo, nos quais um atacante pode deduzir informações sobre o texto claro original sem realmente decifrar o texto cifrado.
+    A reutilização de uma chave de cifra de fluxo pode permitir a realização de ataques de conhecimento nulo, nos quais um atacante pode deduzir informações sobre o texto claro original sem realmente decifrar o texto cifrado.
 
-    - Análise de Padrões:
+  - Análise de Padrões:
 
-        Ao reutilizar a mesma chave de cifra de fluxo, padrões podem surgir na sequência de bits gerada. Isso pode ser explorado por atacantes para inferir informações sobre os dados criptografados.
+    Ao reutilizar a mesma chave de cifra de fluxo, padrões podem surgir na sequência de bits gerada. Isso pode ser explorado por atacantes para inferir informações sobre os dados criptografados.
 
-    - Ameaça à Confidencialidade:
+  - Ameaça à Confidencialidade:
 
-        A confidencialidade dos dados criptografados é comprometida quando a mesma chave é usada repetidamente. Ataques que exploram a repetição de chaves podem ser devastadores para a segurança das informações.
+    A confidencialidade dos dados criptografados é comprometida quando a mesma chave é usada repetidamente. Ataques que exploram a repetição de chaves podem ser devastadores para a segurança das informações.
 
-    - Ataques de Repetição:
+  - Ataques de Repetição:
 
-        Reutilizar a mesma chave de cifra de fluxo pode tornar o sistema vulnerável a ataques de repetição, nos quais um adversário captura e retransmite mensagens criptografadas para obter acesso não autorizado a sistemas ou informações.
+    Reutilizar a mesma chave de cifra de fluxo pode tornar o sistema vulnerável a ataques de repetição, nos quais um adversário captura e retransmite mensagens criptografadas para obter acesso não autorizado a sistemas ou informações.
 
 ## 4. Que operações primitivas são usadas no RC4?
 
   R:
 
-  Swap (Troca):
-    A operação de troca envolve a troca de dois elementos em uma matriz ou em um vetor. No contexto do RC4, essa operação é usada para permutar elementos do estado interno do algoritmo (S-box). Isso é feito para embaralhar os elementos e introduzir confusão no processo de geração da sequência de bytes pseudoaleatórios.
+   Swap (Troca):
 
-  XOR (OU Exclusivo):
-    A operação XOR é fundamental no RC4 para combinar o estado interno (S-box) com os dados de entrada (chave e vetor de inicialização) a fim de produzir o fluxo de bits pseudoaleatório. A operação XOR é aplicada para misturar os bits dos elementos do S-box com os bits da chave e do vetor de inicialização, gerando a sequência de saída.
+     A operação de troca envolve a troca de dois elementos em uma matriz ou em um vetor. No contexto do RC4, essa operação é usada para permutar elementos do estado interno do algoritmo (S-box). Isso é feito para embaralhar os elementos e introduzir confusão no processo de geração da sequência de bytes pseudoaleatórios.
+
+   XOR (OU Exclusivo):
+
+     A operação XOR é fundamental no RC4 para combinar o estado interno (S-box) com os dados de entrada (chave e vetor de inicialização) a fim de produzir o fluxo de bits pseudoaleatório. A operação XOR é aplicada para misturar os bits dos elementos do S-box com os bits da chave e do vetor de inicialização, gerando a sequência de saída.
 
 ## 6. 
 
