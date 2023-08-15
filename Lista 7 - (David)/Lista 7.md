@@ -3,7 +3,8 @@
 ## 1. Por que mdc(n, n + 1) = 1 é para dois inteiros consecutivos n e n + 1?
 
   R: 
-    quando consideramos dois inteiros consecutivos n e n + 1, nunca há fatores primos em comum entre eles, exceto o próprio 1. Portanto, o MDC entre eles é 1.
+    
+   quando consideramos dois inteiros consecutivos n e n + 1, nunca há fatores primos em comum entre eles, exceto o próprio 1. Portanto, o MDC entre eles é 1.
 
 ## 2. Usando o teorema de Fermat, encontre 3^201 mod 11.
 
