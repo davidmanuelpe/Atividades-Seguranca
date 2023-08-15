@@ -10,13 +10,17 @@
   R:
 
    N ≡ 3^201 mod 11
-   N ≡ ((:exclamation:)3^10)^20+1 mod 11
-   N ≡ ((:exclamation:)3^10)^20 * 3^1 mod 11
+   
+   N ≡ (:exclamation:3^10)^20+1 mod 11
+   
+   N ≡ (:exclamation:3^10)^20 * 3^1 mod 11
 
-   como o teorema de fermat nos diz que a^p-1 ≡ 1 mod p, então vamos fazer a substituição do nosso (:exclamation:)a^p-1 na conta.
+   como o teorema de fermat nos diz que a^p-1 ≡ 1 mod p, então vamos fazer a substituição do nosso :exclamation:a^p-1 na conta.
 
    N ≡ 1^20 * 3^1 mod 11
+   
    N ≡ 1 * 3^1 mod 11
+   
    N ≡ 3 mod 11
 
 ## 3. Use o teorema de Fermat para encontrar um número a entre O e 72, com a congruente a 9794 módulo 73.
