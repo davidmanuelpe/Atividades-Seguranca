@@ -4,7 +4,7 @@
 
   R: 
     
-   quando consideramos dois inteiros consecutivos n e n + 1, nunca há fatores primos em comum entre eles, exceto o próprio 1. Portanto, o MDC entre eles é 1.
+   Isso ocorre porque dois inteiros consecutivos, como n e n + 1, não têm fatores primos em comum, exceto o número 1. Um fator primo é um número primo que divide outro número sem deixar um resto. Como n + 1 é o próximo número após n, ele não pode ser divisível por nenhum dos fatores primos de n (caso contrário, eles não seriam consecutivos).
 
 ## 2. Usando o teorema de Fermat, encontre 3^201 mod 11.
 
