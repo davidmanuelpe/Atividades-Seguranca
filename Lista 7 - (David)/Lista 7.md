@@ -82,18 +82,26 @@
   R:  
   
   passo 1:
-    n-1 = 2^k * m
-    2046 = 2^1 * 1023
+   
+   n-1 = 2^k * m
+   
+   2046 = 2^1 * 1023
+  
   passo 2:
-    2046>a>1; a = 2 escolhido deliberadamente.
+    
+   2046>a>1; a = 2 escolhido deliberadamente.
+  
   passo 3:
-    b0 = a^m mod n
-    b0 = 2^1023 mod 2047
-    b0 = (2^11)^93 mod 2047
-
-    2^11 = 2048 ≡ 1 mod 2047
-
-    b0 = 1^93 mod 2047 ≡ 1 mod 2047
+    
+   b0 = a^m mod n
+   
+   b0 = 2^1023 mod 2047
+   
+   b0 = (2^11)^93 mod 2047
+   
+   2^11 = 2048 ≡ 1 mod 2047
+   
+   b0 = 1^93 mod 2047 ≡ 1 mod 2047
 
 ## 8. O exemplo usado por Sun-Tsu para ilustrar o CRT foi x = 2 (mod 3); x = 3 (mod 5); x = 2 (mod 7) Solucione para x.
 
