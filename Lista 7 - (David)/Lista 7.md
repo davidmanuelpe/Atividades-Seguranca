@@ -33,44 +33,44 @@
 
   R:
 
-    O teorema de Euler diz que para quaisquer 'a' e 'n' tal qual, 'a' e 'n' sejam coprimos, então, a^ϕ(n) ≡ 1(mod n)
+  O teorema de Euler diz que para quaisquer 'a' e 'n' tal qual, 'a' e 'n' sejam coprimos, então, a^ϕ(n) ≡ 1(mod n)
 
-    primeiro vou calcular o ϕ(n) da nossa conta, ϕ(10) = 4, nesse caso, (1,3,7,9) então temos que quaisquer um desses 4 números são possíveis candidatos para o nosso a, vamos pegar estratégicamente o número 7 pois é o número usado na nossa equivalência.
+  primeiro vou calcular o ϕ(n) da nossa conta, ϕ(10) = 4, nesse caso, (1,3,7,9) então temos que quaisquer um desses 4 números são possíveis candidatos para o nosso a, vamos pegar estratégicamente o número 7 pois é o número usado na nossa equivalência.
 
-    7^4 ≡ 1 mod 10
+  7^4 ≡ 1 mod 10
 
-    e
+  e
 
-    7^1000 mod 10
+  7^1000 mod 10
 
-    também pode ser escrito como (:red_circle:7^4)^250 mod 10
+  também pode ser escrito como (:red_circle:7^4)^250 mod 10
 
-    substituindo nosso :red_circle:a^ϕ(n):
-    
-    temos,  
-    
-    1^250 mod 10
+  substituindo nosso :red_circle:a^ϕ(n):
+  
+  temos,  
+  
+  1^250 mod 10
 
-    = 1 mod 10
+  = 1 mod 10
 
-    então temos que 7 é um valor válido para a.
+  então temos que 7 é um valor válido para a.
     
 
 ## 5. Use o teorema de Euler para encontrar um número x entre 0 e 28, com x^85 congruente a 6 módulo 35(29?) (Você não precisará usar qualquer pesquisa por força bruta).
 
   R:  
 
-    x^85 = (x^28)^3+1 ≡ 6 mod 29
+  x^85 = (x^28)^3+1 ≡ 6 mod 29
 
-    = 1^3 * x^1 ≡ 6 mod 29
+  = 1^3 * x^1 ≡ 6 mod 29
 
-    = x ≡ 6 mod 29
+  = x ≡ 6 mod 29
 
-    x = 6
+  x = 6
 
 ## 6. Observe, na Tabela 8.2, que ϕ(n) é par para n > 2. Isso é verdadeiro para todo n > 2. Dê um argumento conciso para explicar por que isso acontece.
 
-R:  
+  R:  
 
   podemos dizer que o resultado de ϕ(n) é a quantidade de numeros x, tal que, 1≤x≤n e mmc(n,x) = 1.
 
@@ -78,7 +78,8 @@ R:
 
 ## 7. Se n é composto e passa no teste de Miller-Rabin para a base a, então n é chamado de pseudoprimo forte à base a. Mostre que 2047 é um pseudoprimo à base 2.
 
-R:  
+  R:  
+  
   passo 1:
     n-1 = 2^k * m
     2046 = 2^1 * 1023
