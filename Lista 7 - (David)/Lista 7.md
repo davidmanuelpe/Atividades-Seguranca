@@ -103,6 +103,8 @@
    
    b0 = 1^93 mod 2047 ≡ 1 mod 2047
 
+   já que 2^m mod n = 1 então o teste de Miller-Rabin é inconclusivo para 2047 à base 2
+
 ## 8. O exemplo usado por Sun-Tsu para ilustrar o CRT foi x = 2 (mod 3); x = 3 (mod 5); x = 2 (mod 7) Solucione para x.
 
 R:  
