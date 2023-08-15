@@ -1,4 +1,4 @@
-# Lista 6
+# Lista 7
 
 ## 1. Por que mdc(n, n + 1) = 1 é para dois inteiros consecutivos n e n + 1?
 
@@ -11,11 +11,11 @@
 
    N ≡ 3^201 mod 11
    
-   N ≡ (:exclamation:3^10)^20+1 mod 11
+   N ≡ (:red_circle:3^10)^20+1 mod 11
    
-   N ≡ (:exclamation:3^10)^20 * 3^1 mod 11
+   N ≡ (:red_circle:3^10)^20 * 3^1 mod 11
 
-   como o teorema de fermat nos diz que a^p-1 ≡ 1 mod p, então vamos fazer a substituição do nosso :exclamation:a^p-1 na conta.
+   como o teorema de fermat nos diz que a^p-1 ≡ 1 mod p, então vamos fazer a substituição do nosso :red_circle:a^p-1 na conta.
 
    N ≡ 1^20 * 3^1 mod 11
    
