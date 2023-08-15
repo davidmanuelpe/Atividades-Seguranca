@@ -109,3 +109,57 @@
 
 R:  
   
+ x ≡ 2 mod 3
+
+ x ≡ 3 mod 5
+
+ x ≡ 2 mod 7
+
+ chamaremos 2, 3 e 2 de n1, n2 e n3 respectivamente
+
+ passo 1:
+  
+  N = 3 * 5 * 7 = 105
+
+ passo 2:
+
+  Nx = N/nx
+
+  N1 = 105/3 = 35
+
+  N2 = 105/5 = 21
+
+  N3 = 105/7 = 15
+
+ passo 3:
+
+  calcular o inverso multiplicativo para cada Nx, ou seja um número k, tal que, k * Nx seja ≡ 1 mod nx
+
+  k1 = 35^-1 (mod3) ≡ 2 (mod3)
+
+  k2 = 21^-1 (mod5) ≡ 1 (mod5)
+
+  k3 = 15^-1 (mod7) ≡ 1 (mod7)
+
+ passo 4:
+
+  calcular a soma ponderada dos resíduos originais 
+
+  x ≡ (2 * 35 * 2)+(3 * 21 * 1)+(2 * 15 * 1)(mod 105)
+  x ≡ 140 + 63 + 30 ≡ 233 (mod 105)
+
+  que é o mesmo que x ≡ 23 (mod 105)
+
+ para finalizar testamos se o 23 de fato resolve para as três congruências iniciais
+
+  23 ≡ 2 mod 3
+
+  3*7 = 21; r = 2, (verdadeiro)
+
+  23 ≡ 3 mod 5
+
+  5*4 = 20; r = 3, (verdadeiro) 
+
+  23 ≡ 2 mod 7
+
+  7*3 = 21; r = 2, (verdadeiro)
