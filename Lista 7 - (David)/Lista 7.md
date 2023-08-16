@@ -73,9 +73,9 @@
 
   R:  
 
-  podemos dizer que o resultado de ϕ(n) é a quantidade de numeros x, tal que, 1≤x≤n e mmc(n,x) = 1.
+  podemos dizer que o resultado de ϕ(n) é a quantidade de numeros x, tal que, 1≤x≤n e mdc(n,x) = 1.
 
-  também é fácil de visualizar que visualizar que se mmc(n,x) = 1 então, o mmc(x,n-x) = 1 já que se mmc(x,n-x) != 1 então n seria múltiplo no próprio x, então podemos dizer que x e n-x formam pares de números coprimos de n, desde que x e n-x sejam números distintos, o caso onde isso é verdadeiro é quando n = 2 e x = 1, oque nunca acontece já que nossa regra base é que n > 2, então todos os números coprimos de n podem ser combinados em pares {x,n-x}. Logo ϕ(n) é par.
+  também é fácil de visualizar que visualizar que se mdc(n,x) = 1 então, o mdc(x,n-x) = 1 já que se mdc(x,n-x) != 1 então n seria múltiplo no próprio x, então podemos dizer que x e n-x formam pares de números coprimos de n, desde que x e n-x sejam números distintos, o caso onde isso é verdadeiro é quando n = 2 e x = 1, oque nunca acontece já que nossa regra base é que n > 2, então todos os números coprimos de n podem ser combinados em pares {x,n-x}. Logo ϕ(n) é par.
 
 ## 7. Se n é composto e passa no teste de Miller-Rabin para a base a, então n é chamado de pseudoprimo forte à base a. Mostre que 2047 é um pseudoprimo à base 2.
 
