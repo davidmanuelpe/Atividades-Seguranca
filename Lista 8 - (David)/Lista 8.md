@@ -243,22 +243,22 @@ Dica: a decriptação não é tão difícil quanto você pensa; use alguma sutil
 
   R:
 
-    Geralmente não seria possível alcançar essa chave mas devido à uma má escolha dos números primos e dos pequenos valores nesse caso é possível, temos que encontrar dois primos distintos p e q, tais que, p*q = 35 e (p-1) * (q-1) = 24 já que φ(35) = 24, vamos primeiro fatorar o 35 em números primos obtendo 5*7, vamos assumir p = 5 e q = 7, agora vamos tentar chegar no resultado do φ(35):
-
-    4*6 = 24
-  
-    agora calculamos o d
-
-    d = e^-1 % φ(n)
-
-    5*d ≡ 1 % 24
-
-    5*5 ≡ 1 % 24
-
-    d = 5
-
-    agora temos a Chave Privada {5,35}
-
-    por fim,
-
-    M = 10^5 % 35 = 5
+   Geralmente não seria possível alcançar essa chave mas devido à uma má escolha dos números primos e dos pequenos valores nesse caso é possível, temos que encontrar dois primos distintos p e q, tais que, p*q = 35 e (p-1) * (q-1) = 24 já que φ(35) = 24, vamos primeiro fatorar o 35 em números primos obtendo 5*7, vamos assumir p = 5 e q = 7, agora vamos tentar chegar no resultado do φ(35):
+ 
+   4*6 = 24
+ 
+   agora calculamos o d
+ 
+   d = e^-1 % φ(n)
+ 
+   5*d ≡ 1 % 24
+ 
+   5*5 ≡ 1 % 24
+ 
+   d = 5
+ 
+   agora temos a Chave Privada {5,35}
+ 
+   por fim,
+ 
+   M = 10^5 % 35 = 5
